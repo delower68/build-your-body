@@ -1,0 +1,80 @@
+.activity-container{
+    text-align: start;
+    padding:0px 30px;
+    height: 100vh;
+    width: 30%;
+    background-color: rgba(250, 250, 235, 0.843);
+}
+.my-info{
+    height: 100px;
+    width: 280px;
+    border-radius: 10px;
+    background-color: rgb(198, 193, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.my-info h1{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.take-time{
+    height: 100px;
+    width: 280px;
+    border-radius: 10px;
+    background-color: rgb(198, 193, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.take-time ul{
+    display: flex;
+    margin-left: -40px;
+    
+}
+.take-time ul li{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 50%;
+    list-style: none;
+    margin-right: 5px;
+}
+.take-time ul li:hover{
+    background-color: rgb(203, 252, 236);
+}
+.exercise-time{
+    height: 100px;
+    width: 280px;
+    background-color: rgb(198, 193, 193);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.break-time{
+    height: 100px;
+    width: 280px;
+    background-color: rgb(198, 193, 193);
+    border-radius: 10px;
+}
+.activity-btn{
+    padding: 2px 25px;
+    background-color: rgb(104, 147, 249);
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    color: white;
+}
+
+
+@media screen and (max-width:580px){
+    .activity-container{
+        text-align: start;
+        padding:0px 30px;
+        height: 1000px;
+        width: 100%;
+        background-color: rgba(250, 250, 235, 0.843);
+    }
+}

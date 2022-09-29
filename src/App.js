@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from './components/Page-container/Container';
+
+// import Records from './records.json'
 
 function App() {
   return (
-    <div>
-      
+    <div className='App'>
+      <Container/>
     </div>
   );
 }
