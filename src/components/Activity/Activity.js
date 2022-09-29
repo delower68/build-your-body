@@ -1,5 +1,9 @@
 import React from 'react';
-import './Activity.css'
+import './Activity.css';
+// import {toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import Toast from '../Toast/Toast';
+
 
 const Activity = ({singleProduct}) => {
     console.log(singleProduct);
@@ -7,6 +11,7 @@ const Activity = ({singleProduct}) => {
     for(const product of singleProduct){
         totalTime = totalTime + product.time ;
     }
+
     return (
         <div className='activity-container'>
             <div className=''>
@@ -47,11 +52,12 @@ const Activity = ({singleProduct}) => {
                 <div className='break-time'>
                     <h4>Break time: </h4>
                 </div>
-                <button className='activity-btn'>
-                    <h4>Activity Completed</h4>
+                <button  className='activity-btn'>
+                    <h4  >Activity Completed</h4>
                 </button>
         </div>
     );
+    
 };
 
 export default Activity;

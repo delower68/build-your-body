@@ -4,6 +4,7 @@
     height: 100%;
     background-color: rgba(250, 250, 235, 0.843);
     position: sticky;
+    /* top: 0; */
 }
 .my-info{
     height: 100px;
@@ -40,6 +41,7 @@
     border-radius: 50%;
     list-style: none;
     margin-right: 5px;
+    cursor: pointer;
 }
 .take-time ul li:hover{
     background-color: rgb(203, 252, 236);

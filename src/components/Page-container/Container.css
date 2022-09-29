@@ -1,9 +1,0 @@
-.containers{
-    /* background-color: rgb(111, 171, 235); */
-    display: flex;
-}
-@media screen and (max-width:580px) {
-    .containers{
-        display: block;
-    }
-}

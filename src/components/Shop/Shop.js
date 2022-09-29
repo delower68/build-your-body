@@ -3,7 +3,7 @@ import './Shop.css';
 import React,{ useEffect, useState } from 'react';
 import Activity from '../Activity/Activity'
 import SingleCard from '../All-Cards/SingleCard/SingleCard';
-import { addToDb } from '../../fakeDb';
+import { addToDb, getStoredCart } from '../../fakeDb';
 
 
 const Shop = () => {
@@ -14,6 +14,14 @@ const Shop = () => {
         fetch('records.json')
         .then(res=> res.json())
         .then(data => setProducts(data))
+    },[])
+        // for localStorage 
+    useEffect(()=>{
+        const storedCart = getStoredCart()
+        // console.log(storedCart);
+        for(const _id in storedCart){
+            console.log(_id);
+        }
     },[])
 
     const handelAddToCart=(product) =>{
@@ -29,7 +37,7 @@ const Shop = () => {
             <div className="product-container">
                 <h1>Build Your Body: {products.length}</h1>
                <h2>Select today’s exercise</h2>
-               <button className='interView-qs'>Question And Answer</button>
+               <a href="../../index1.html" target={'_blank'} className='interView-qs'>Question And Answer</a>
                {
                 products.map(product => <SingleCard
                     key={product._id}
