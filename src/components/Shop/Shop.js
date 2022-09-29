@@ -3,6 +3,7 @@ import './Shop.css';
 import React,{ useEffect, useState } from 'react';
 import Activity from '../Activity/Activity'
 import SingleCard from '../All-Cards/SingleCard/SingleCard';
+import { addToDb } from '../../fakeDb';
 
 
 const Shop = () => {
@@ -16,10 +17,11 @@ const Shop = () => {
     },[])
 
     const handelAddToCart=(product) =>{
-        console.log(product);
-        // singleProduct.push(product)
+        // console.log(product);
         const newSingleProduct = [...singleProduct , product];
         setSingleProduct(newSingleProduct)
+
+        addToDb(product._id);
     }
 
     return (
