@@ -20,11 +20,25 @@ const addToDb = e =>{
         // localStorage.setItem(e.target.innerText , 1)
         timeStore[e.target.innerText] =1 ;
     }
-    localStorage.setItem('timeLocalStore' , JSON.stringify(timeStore))
+    localStorage.setItem('timeLocalStore' , JSON.stringify(timeStore));
 
+    
+}
+const getStoredCart = ()=>{
+    let timeStore = {};
+
+// get the previous stored data 
+    const storedCart = localStorage.getItem('timeLocalStore');
+    if (storedCart) {
+        timeStore = JSON.parse(storedCart)
+    }
+    else{
+        timeStore = {}
+    }
+    return timeStore ;
 }
 
 
 export {
-    addToDb
+    addToDb,getStoredCart
     }

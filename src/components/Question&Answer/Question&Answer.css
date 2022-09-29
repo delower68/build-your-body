@@ -1,0 +1,9 @@
+.question-UI {
+    margin-top: 10px;
+}
+@media screen and (max-width:480px){
+    .question-UI{
+        text-align: center;
+        padding-top: 50px;
+    }
+}

@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Activity.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { addToDb } from '../../fakeDb';
+import { addToDb, getStoredCart } from '../../fakeDb';
 
 
 
 const Activity = ({singleProduct}) => {
 
-    const notify = () => toast("Successful! You Have Done.");
+    const notify = () => toast("Successful! You Did It.");
     // console.log(toast);
 
     const [getTime , setGetTime] = useState([])
@@ -17,6 +17,11 @@ const Activity = ({singleProduct}) => {
     for(const product of singleProduct){
         totalTime = totalTime + product.time ;
     }
+
+    // useEffect(()=>{
+    //     const storedData = getStoredCart();
+        
+    // },[])
 
     const handelTimeSet =(e)=>{
         // const value = e.target.innerText

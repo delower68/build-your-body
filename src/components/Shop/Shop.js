@@ -35,24 +35,29 @@ const Shop = () => {
     }
 
     return (
-        <div className='shop-container'>
+        <div>
+            <div>
+            <h1>Build Your Body</h1>
+               <h2>Select today’s exercise:</h2>
+               
+            </div>
+            <div className="shop-container">
             <div className="product-container">
-                <h1>Build Your Body</h1>
-               <h2>Select today’s exercise</h2>
-               <button target={'_blank'} className='interView-qs'>Question And Answer</button>
-               {
-                products.map(product => <SingleCard
-                    key={product._id}
-                    product = {product}
-                    handelAddToCart={handelAddToCart}
-                    ></SingleCard>)
-            }
-
+                
+                {
+                 products.map(product => <SingleCard
+                     key={product._id}
+                     product = {product}
+                     handelAddToCart={handelAddToCart}
+                     ></SingleCard>)
+             }
+ 
+             </div>
+             <div className="activity-container">
+             <Activity singleProduct={singleProduct}></Activity>
+             </div>
             </div>
-            <div className="activity-container">
-            <Activity singleProduct={singleProduct}></Activity>
-            </div>
-            <div className='question-and-answer'>\
+            <div className='question-and-answer'>
             <QuestionAnswer/>
             </div>        
         </div>
