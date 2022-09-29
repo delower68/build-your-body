@@ -1,0 +1,32 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.interView-qs{
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+}
+
+@media screen  and (max-width:480px){
+    .shop-container{
+        display: block;
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
+    }
+    .interView-qs{
+        border: none;
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+}

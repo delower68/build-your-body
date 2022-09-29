@@ -2,8 +2,8 @@ import React from 'react';
 import './SingleCard.css'
 const SingleCard = (props) => {
     // console.log(props);
-
-    const {name,des , handelAddToCart , age, img , time} = props.product
+    const {handelAddToCart} = props
+    const {name,des, age, img , time} = props.product
     return (
         <div>
             <div className='card'>
