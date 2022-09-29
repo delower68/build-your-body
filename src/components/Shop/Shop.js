@@ -3,7 +3,7 @@ import './Shop.css';
 import React,{ useEffect, useState } from 'react';
 import Activity from '../Activity/Activity'
 import SingleCard from '../All-Cards/SingleCard/SingleCard';
-import { addToDb, getStoredCart } from '../../fakeDb';
+// import { addToDb } from '../../fakeDb';
 import QuestionAnswer from '../Question&Answer/QuestionAnswer';
 
 
@@ -18,26 +18,26 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[])
         // for localStorage 
-    useEffect(()=>{
-        const storedCart = getStoredCart()
-        // console.log(storedCart);
-        for(const _id in storedCart){
-            console.log(_id);
-        }
-    },[])
+    // useEffect(()=>{
+    //     const storedCart = getStoredCart()
+    //     // console.log(storedCart);
+    //     for(const _id in storedCart){
+    //         console.log(_id);
+    //     }
+    // },[])
 
     const handelAddToCart=(product) =>{
         // console.log(product);
         const newSingleProduct = [...singleProduct , product];
         setSingleProduct(newSingleProduct)
 
-        addToDb(product._id);
+        
     }
 
     return (
         <div className='shop-container'>
             <div className="product-container">
-                <h1>Build Your Body: {products.length}</h1>
+                <h1>Build Your Body</h1>
                <h2>Select today’s exercise</h2>
                <button target={'_blank'} className='interView-qs'>Question And Answer</button>
                {
@@ -46,14 +46,14 @@ const Shop = () => {
                     product = {product}
                     handelAddToCart={handelAddToCart}
                     ></SingleCard>)
-               }
+            }
 
             </div>
             <div className="activity-container">
-               <Activity singleProduct={singleProduct}></Activity>
+            <Activity singleProduct={singleProduct}></Activity>
             </div>
             <div className='question-and-answer'>\
-               <QuestionAnswer/>
+            <QuestionAnswer/>
             </div>        
         </div>
     );

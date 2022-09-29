@@ -1,40 +1,30 @@
-const addToDb = _id =>{
+const addToDb = e =>{
+    let timeStore = {};
 
-    let shoppingCart = {};
-
-    // get the the privious storage 
-    const storedCart = localStorage.getItem('shoppingCart');
+    // get the previous stored data 
+    const storedCart = localStorage.getItem('timeLocalStore');
     if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+        timeStore = JSON.parse(storedCart)
     }
     else{
-        shoppingCart = {};
+        timeStore = {}
     }
-    
-    const quantity = shoppingCart[_id];
+
+    const quantity = timeStore[e.target.innerText]
     if (quantity) {
-        const newQuantity = (quantity) + 1;
-        shoppingCart[_id] = newQuantity;
-        // localStorage.setItem(_id, newQuantity);
+        const newQuantity = (quantity) + 1 ;
+        timeStore[e.target.innerText] = newQuantity ;
+        // localStorage.setItem(e.target.innerText, newQuantity)
     }
     else{
-        // localStorage.setItem(_id , 1);
-        shoppingCart[_id] = 1
+        // localStorage.setItem(e.target.innerText , 1)
+        timeStore[e.target.innerText] =1 ;
     }
-    localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart))
+    localStorage.setItem('timeLocalStore' , JSON.stringify(timeStore))
+
 }
 
-const getStoredCart = ()=>{
-    let shoppingCart = {};
-
-    // get the the privious storage 
-    const storedCart = localStorage.getItem('shoppingCart');
-    if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
-    }
-    return shoppingCart
-}
 
 export {
-    addToDb,getStoredCart
+    addToDb
     }

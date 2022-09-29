@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Activity.css';
 import { ToastContainer, toast } from 'react-toastify';
+import { addToDb } from '../../fakeDb';
 
 
 
@@ -20,6 +21,8 @@ const Activity = ({singleProduct}) => {
     const handelTimeSet =(e)=>{
         // const value = e.target.innerText
         setGetTime(e.target.innerText);
+        // console.log(e.target.innerText);
+        addToDb(e);
     }
 
     return (
