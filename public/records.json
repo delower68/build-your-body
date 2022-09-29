@@ -3,6 +3,7 @@
       "_id": "61fb989256f61bab608dc4d2",
       "img": "./images/1535529767493.jpg",
       "time": 20,
+      "age": 20,
       "name": "Power Rack",
         "des": "Power rack, also known as full rack is a massive square-like piece of equipment, which can be used for various exercise, including squats, bench presses, pull-ups and some of them."
     },
@@ -10,36 +11,40 @@
       "_id": "61fb98922547ddb0d59c98ba",
       "img": "./images/Lifting-Chalk-750x526.jpg",
       "time": 70,
+      "age": 30,
       "name": "Squat Rack ",
-        "des": "Half rack is basically one half of a power rack. It does not take a lot of space (in comparison to a full rack), it’s usually cheaper, but you can’t do as many different exercises with it as you can with a full rack. Usually, it’s meant for squats and pull-ups. While power (full) rack can also be used for squats, I felt obligated to separate the two."
+        "des": "Half rack is basically one half of a power rack. It does not take a lot of space (in comparison to a full rack), it’s usually cheaper, but you can’t do."
     },
     {
       "_id": "61fb98921eacae6e7fe57679",
       "img": "./images/Ripped-in-4-Weeks.jpeg",
       "time": 60,
+      "age": 40,
       "name": "Cable Crossover Machine",
-      "des": "You can usually find a good cable cross-over machine in your local gym. From my personal experience, a proper gym owns one or two of these machines. They look like two columns that utilize linear bearings and a pulley system.On the other hand, you can train basically entire upper body with this machine."
+      "des": "You can usually find a good cable cross-over machine in your local gym. From my personal experience."
     },
     {
       "_id": "61fb9892c2a1fb24a0d20157",
       "img": "./images/barbell-exercises-article.jpg",
       "time": 50,
+      "age": 25,
       "name": "Power Tower",
-        "des": "Power towers are quite accessible these days, from various manufacturers in various quality. You can also get a commercially-graded one, which is of course more expensive.Another machine that definitely must have caught everyone’s attention (mainly because of its size) is the power tower. This heavy duty stand consists mainly of a dip station, pull-up bar, back-rest and sometimes sit-up bar or push-up bars that can be located at the base."
+        "des": "Power towers are quite accessible these days, from various manufacturers in various quality. You can also get a commercially-graded one, which is of course more expensive."
     },
     {
       "_id": "61fb9892884ed91223aa4bb1",
       "img": "./images/pexels-photo-1552242.jpeg",
-      
+      "age": 35,
       "time": 40,
       "name": "Hammer Strength Machine",
-        "des": "In most well-equipment public gyms, you can come across a hammer strength machine. This particular piece of equipment uses iso-lateral technology and is specifically patented for hammer strength.It is designed to copy natural moves of a human body, while at the same time uses the combination of one-sided movements and arcs to increase one’s strength."
+        "des": "In most well-equipment public gyms, you can come across a hammer strength machine. This particular piece of equipment uses iso-lateral technology."
     },
     {
       "_id": "61fb9892891223aa4ba1",
       "img": "./images/preparing-to-deadlift-a-barbell-750x542.jpg",
       "time": 30,
+      "age": 50,
       "name": "Chest Press Machine",
-      "des": "The machine works the same pectoral muscles as a bench press, although the design is a bit different. You are actually pushing in front of you two mechanical arms loaded with heavy weight plates.While chest press machines are not really that popular, you can still find several of them online in non-commercial quality, which is great for home gym enthusiasts."
+      "des": "The machine works the same pectoral muscles as a bench press, although the design is a bit different. You are actually pushing in front of you two mechanical."
     }
   ]

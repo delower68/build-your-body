@@ -4,6 +4,7 @@ import Activity from '../Activity/Activity'
 import './Container.css'
 
 const Container = () => {
+    
         return(
             <div className='containers'>
             <Cards/>

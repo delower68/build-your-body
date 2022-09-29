@@ -1,9 +1,10 @@
 .activity-container{
     text-align: start;
     padding:0px 30px;
-    height: 100vh;
+    height: 100%;
     width: 30%;
     background-color: rgba(250, 250, 235, 0.843);
+    position: sticky;
 }
 .my-info{
     height: 100px;
@@ -50,12 +51,16 @@
     background-color: rgb(198, 193, 193);
     border-radius: 10px;
     margin-bottom: 10px;
+    padding: 10px ;
+
 }
 .break-time{
     height: 100px;
     width: 280px;
     background-color: rgb(198, 193, 193);
     border-radius: 10px;
+    padding: 10px ;
+
 }
 .activity-btn{
     padding: 2px 25px;
@@ -73,7 +78,7 @@
     .activity-container{
         text-align: start;
         padding:0px 30px;
-        height: 1000px;
+        height: 100vh;
         width: 100%;
         background-color: rgba(250, 250, 235, 0.843);
     }
