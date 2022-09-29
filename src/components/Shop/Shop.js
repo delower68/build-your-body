@@ -4,6 +4,7 @@ import React,{ useEffect, useState } from 'react';
 import Activity from '../Activity/Activity'
 import SingleCard from '../All-Cards/SingleCard/SingleCard';
 import { addToDb, getStoredCart } from '../../fakeDb';
+import QuestionAnswer from '../Question&Answer/QuestionAnswer';
 
 
 
@@ -51,8 +52,8 @@ const Shop = () => {
             <div className="activity-container">
                <Activity singleProduct={singleProduct}></Activity>
             </div>
-            <div className='question-and-answer'>
-
+            <div className='question-and-answer'>\
+               <QuestionAnswer/>
             </div>        
         </div>
     );
