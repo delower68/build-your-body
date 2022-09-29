@@ -37,13 +37,13 @@ const Shop = () => {
             <div className="product-container">
                 <h1>Build Your Body: {products.length}</h1>
                <h2>Select today’s exercise</h2>
-               <a href="../../index1.html" target={'_blank'} className='interView-qs'>Question And Answer</a>
+               <button target={'_blank'} className='interView-qs'>Question And Answer</button>
                {
                 products.map(product => <SingleCard
                     key={product._id}
                     product = {product}
                     handelAddToCart={handelAddToCart}
-                     ></SingleCard>)
+                    ></SingleCard>)
                }
 
             </div>

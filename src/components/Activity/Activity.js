@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Activity.css';
 // import {toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -6,10 +6,17 @@ import './Activity.css';
 
 
 const Activity = ({singleProduct}) => {
+    const [getTime , setGetTime] = useState([])
+
     console.log(singleProduct);
     let totalTime = 0 ;
     for(const product of singleProduct){
         totalTime = totalTime + product.time ;
+    }
+
+    const handelTimeSet =(e)=>{
+        // const value = e.target.innerText
+        setGetTime(e.target.innerText);
     }
 
     return (
@@ -38,11 +45,11 @@ const Activity = ({singleProduct}) => {
 
                 <div className="take-time">
                     <ul>
-                        <li>10s</li>
-                        <li>20s</li>
-                        <li>30s</li>
-                        <li>40s</li>
-                        <li>50s</li>
+                        <button onClick={handelTimeSet} >10s</button>
+                        <button onClick={handelTimeSet} >20s</button>
+                        <button onClick={handelTimeSet} >30s</button>
+                        <button onClick={handelTimeSet} >40s</button>
+                        <button onClick={handelTimeSet} >50s</button>
                     </ul>
                 </div>
                 <h2>Exercise Details</h2>
@@ -50,7 +57,7 @@ const Activity = ({singleProduct}) => {
                     <h4>Exercise time: {totalTime}s</h4>
                 </div>
                 <div className='break-time'>
-                    <h4>Break time: </h4>
+                    <h4>Break time:{getTime} </h4>
                 </div>
                 <button  className='activity-btn'>
                     <h4  >Activity Completed</h4>
