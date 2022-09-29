@@ -1,7 +1,12 @@
 import React from 'react';
 import './Activity.css'
 
-const Activity = () => {
+const Activity = ({singleProduct}) => {
+    console.log(singleProduct);
+    let totalTime = 0 ;
+    for(const product of singleProduct){
+        totalTime = totalTime + product.time ;
+    }
     return (
         <div className='activity-container'>
             <div className=''>
@@ -37,10 +42,10 @@ const Activity = () => {
                 </div>
                 <h2>Exercise Details</h2>
                 <div className='exercise-time'>
-                    <h4>Exercise time</h4>
+                    <h4>Exercise time: {totalTime}s</h4>
                 </div>
                 <div className='break-time'>
-                    <h4>Break time</h4>
+                    <h4>Break time: </h4>
                 </div>
                 <button className='activity-btn'>
                     <h4>Activity Completed</h4>

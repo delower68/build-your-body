@@ -38,7 +38,7 @@ const Shop = () => {
 
             </div>
             <div className="activity-container">
-               <Activity></Activity>
+               <Activity singleProduct={singleProduct}></Activity>
             </div>        
         </div>
     );
