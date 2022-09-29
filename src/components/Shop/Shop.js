@@ -6,6 +6,7 @@ import SingleCard from '../All-Cards/SingleCard/SingleCard';
 import { addToDb, getStoredCart } from '../../fakeDb';
 
 
+
 const Shop = () => {
     const [products , setProducts] = useState([]);
     const [singleProduct, setSingleProduct] = useState([])
@@ -49,6 +50,9 @@ const Shop = () => {
             </div>
             <div className="activity-container">
                <Activity singleProduct={singleProduct}></Activity>
+            </div>
+            <div className='question-and-answer'>
+
             </div>        
         </div>
     );
