@@ -9,7 +9,7 @@ const addToDb = e =>{
     else{
         timeStore = {}
     }
-
+        // data count here 
     const quantity = timeStore[e.target.innerText]
     if (quantity) {
         const newQuantity = (quantity) + 1 ;

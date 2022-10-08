@@ -8,31 +8,22 @@ import { addToDb, getStoredCart } from '../../fakeDb';
 const Activity = ({singleProduct}) => {
 
     const notify = () => toast("Successful! You Did It.");
-    // console.log(toast);
 
     const [getTime , setGetTime] = useState([])
 
-    // console.log(singleProduct);
     let totalTime = 0 ;
     for(const product of singleProduct){
         totalTime = totalTime + product.time ;
     }
 
-    // useEffect(()=>{
-    //     const storedData = getStoredCart();
-        
-    // },[])
-
     const handelTimeSet =(e)=>{
-        // const value = e.target.innerText
         setGetTime(e.target.innerText);
-        // console.log(e.target.innerText);
         addToDb(e);
     }
 
     return (
         <div className='activity-container'>
-            <div className=''>
+            <div >
                 <h1>Delower Hossain </h1>
                 <p>Email: hdelower68@gmial.com</p>
 
